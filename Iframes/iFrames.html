@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
 </head>
-<body>
-    
-        <b>Usando a tag <u><i>embed</i></u></b>
-    </br>
-        <embed src="../Iframes/MadFields.pdf" type="application/pdf" width="30%">
 
+<body bgcolor="#d6d6d6">
+
+    <!-- Aqui eu estou usando a tag object para puxar o PDF -->
+    <object data="../Iframes/assets/media/MadFields.pdf" type="application/pdf" width="100%">
+        </br>
+        <p>Seu navegador não tem um plugin pra PDF</p>
+    </object>
     <p></p>
+    
+    <center>
+        
+    <!-- Aqui eu estou usando a tag iframe para colocar um video do youtube na página -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QTmzUEDyG0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <b>Usando a tag <u><i>object</i></u></b>
-    </br>
-        <object data="../Iframes/MadFields.pdf" type="application/pdf" width="30%">
-            <p>Seu navegador não tem um plugin pra PDF</p>
-        </object>
+    <!-- Aqui eu estou usando a tag video e a tag source para colocar um video na página -->
+        <video width="560" height="315" controls="controls">
+        <source src="/Iframes/assets/media/Sunset.mp4" type="video/mp4">
+        </video>
+    
 
+        <!-- Aqui colocarei o áudio -->
+        <audio id="player" controls="controls">
+            <source src="/Iframes/assets/media/Love Nwantiti.mp3" type="audio/mp3" />
+            Seu navegador não suporta HTML5
+        </audio>
+
+        </center>
 </body>
+
 </html>
